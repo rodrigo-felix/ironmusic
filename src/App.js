@@ -1,13 +1,26 @@
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 
-import './App.css';
+import Home from './components/Home/Home';
+import Listartist from './components/Listartist/Listartist';
 
-function App() {
+const App = () => {
   return (
-
-    <div>
-      <h1>IronMusic</h1>
-    </div>
-
+    <Router>
+      <Navbar/>
+      <main>
+        <switch>
+          <Route path="/" exact><Home/></Route>
+          <Route path="/List-artist" exact><Listartist/></Route>
+        </switch>        
+      </main>
+    </Router>
   );
 }
 
