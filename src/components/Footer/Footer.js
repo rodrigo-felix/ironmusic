@@ -28,7 +28,7 @@ const Footer = () => {
                     <FaYoutube size="40" color="#ef233c" />
                 </a>
                 <a href="https://www.Facebook.com/c/SpeakupTech">
-                    <FaFacebook size="40" color="#fca311" />
+                    <FaFacebook size="41" color="#fca311" />
                 </a>
                 
             </div>
