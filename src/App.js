@@ -7,21 +7,29 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 
+
 import Home from './components/Home/Home';
 import Listartist from './components/Listartist/Listartist';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
     <Router>
       <Navbar/>
       <main>
-        <switch>
+        <Switch>
           <Route path="/" exact><Home/></Route>
           <Route path="/List-artist" exact><Listartist/></Route>
-        </switch>        
+        </Switch>        
       </main>
+      <Footer/>
     </Router>
+
   );
+
+
 }
+
+
 
 export default App;
