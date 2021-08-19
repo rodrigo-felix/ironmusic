@@ -14,7 +14,7 @@ const Footer = () => {
     return (
 
         <footer className="footer" >
-            <span className="span" >MÍDIA SOCIAL</span>
+            <span className="span" >MÍDIAS SOCIAIS</span>
             <div>
                 <a href="https://twitter.com/">
                     <FaTwitter size="40" color="#2b2d42" />

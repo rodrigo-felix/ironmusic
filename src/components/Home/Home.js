@@ -4,7 +4,7 @@ import './Home.css';
 const Home = () => {
     return (
         <div className="container">
-            <h1 className="text-center" style={ {paddingTop: "30%" }}>
+            <h1 className="text-center" style={{ paddingTop: "30%" }}>
                 Home
             </h1>
             <div className="card-search card text-center">
@@ -13,10 +13,12 @@ const Home = () => {
                     <form>
                         <input type="email" class="form-control" id="search-artist" placeholder="Busque pelo artista :)"></input><br></br>
                         <button type="submit" class="btn btn-primary">Buscar e ouvir</button>
-                    </form>
+                    </form>                 
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+
+            
+            )
 }
-export default Home;
+            export default Home;
