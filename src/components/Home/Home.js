@@ -27,7 +27,6 @@ const Home = () => {
                             <div class="card-body" >
                                 <h5 class="card-title">Crurrasco</h5>
                             </div>
-
                         </div>
                         <div class="card">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdzKImWuHX_M1gLp57gUkhba5vawIHm4YIIg" class="card-img-top" alt="Mixtapes"></img>
