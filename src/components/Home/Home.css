@@ -1,22 +1,29 @@
 .card-search {
     background-color: #14213d;
 }
-.container {
- 
-}
+
 h5{
     color: #fca311;
 }
 
  .center {
      display: none;
+      textAlign: "center"
  }
 
  .week {
 color: #fca311;
 border-radius: .6rem;
-display: flex;
+display:flex;
 flex-direction: column;
 height: 600px;
 width: 700px;
- }
+
+
+ } 
+ 
+ img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
