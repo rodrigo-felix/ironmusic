@@ -13,7 +13,7 @@ import  './style.css';
 const Footer = () => {
     return (
 
-        <footer className="footer" >
+        <footer className="footer" class="fixarRodape" >
             <span className="span" >MÍDIAS SOCIAIS</span>
             <div>
                 <a href="https://twitter.com/">

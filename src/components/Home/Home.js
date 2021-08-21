@@ -3,8 +3,9 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div className="container">
-            <h1 className="text-center" style={{ paddingTop: "30%" }}>
+        <center>
+             <div className="container">
+            <h1 className="text-center" style={{ paddingTop: "15%" }}>
                 Home
             </h1>
             <div className="card-search card text-center">
@@ -44,6 +45,9 @@ const Home = () => {
                 </div>
             </carousel>
         </div>
+
+        </center>
+       
 
 
 
