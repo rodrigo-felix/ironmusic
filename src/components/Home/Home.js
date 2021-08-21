@@ -23,14 +23,14 @@ const Home = () => {
 
                 <div class="card-group">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1559060680-36abfac01944?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fGZlc3RpdmFsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Minha Supermix"></img>
+                        <img src="https://www.comprerural.com/wp-content/uploads/2019/12/melhores-cortes-para-o-churrasco-640x425.jpg" class="card-img-top" alt="Minha Supermix"></img>
                         <div class="card-body">
                             <h5 class="card-title">Minha Supermix</h5>
                         </div>
 
                     </div>
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZlc3RpdmFsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Mixtapes"></img>
+                        <img src="http://s2.glbimg.com/JOAtCcYr-vvTF1PSCnOpYEQfIQk=/695x0/s.glbimg.com/po/tt2/f/original/2015/08/28/imagem01.jpg" class="card-img-top" alt="Mixtapes"></img>
                         <div class="card-body">
                             <h5 class="card-title">Mixtapes</h5>
                         </div>
