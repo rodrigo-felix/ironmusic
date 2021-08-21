@@ -5,11 +5,11 @@ import {
   Switch
 } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-
+import Footer from './components/Footer/Footer';
 
 import Home from './components/Home/Home';
 import Listartist from './components/Listartist/Listartist';
-import Footer from './components/Footer/Footer';
+
 
 const App = () => {
   return (
@@ -23,12 +23,7 @@ const App = () => {
       </main>
       <Footer/>
     </Router>
-
   );
-
-
 }
-
-
 
 export default App;
