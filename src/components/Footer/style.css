@@ -1,16 +1,15 @@
 .footer {
 background-color: #14213d;
+
 display: flex;
 width: 100%;
 padding: 15px 5%;
 font-weight: bold;
 line-height: 35px;
 
-
-
-position: absolute;
+position: relative;
 bottom: 0px;
-
+height: 60px;
 
 }
 
