@@ -3,7 +3,7 @@ import axios from 'axios'
 const api = axios.create({
     baseURL: 'https://api.spotify.com/v1',
     headers: {
-        Authorization: 'BearerEARER BQDsfylIA1OD-3ST1Gl6THfAFxVgcFb_x_6BRzvLg4N8i23k3UwKwmL4rBLNGIHMN1Z-0O7M6JoRlmtXzOQ'
+        Authorization: process.env.TOKEN_SPOTIFY
     }
 })
 
