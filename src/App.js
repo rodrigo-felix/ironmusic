@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 
 import Home from './components/Home/Home';
 import Listartist from './components/Listartist/Listartist';
-
+import Albumartist from './components/Albunsartist/Albumartist';
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
         <Switch>
           <Route path="/" exact><Home/></Route>
           <Route path="/List-artist" exact><Listartist/></Route>
+          <Route path="/Albuns-artist" exact><Albumartist/></Route>
         </Switch>        
       </main>
       <Footer/>

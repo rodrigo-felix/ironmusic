@@ -18,7 +18,7 @@ class Listartist extends Component{
             <h1 className="text-center" style={ {paddingTop: "30%" }}>
                 List of artist found
             </h1>
-            <button onClick={  () => this.updateArtist('blink182')}>Teste</button>
+            <button onClick={ () => this.updateArtist('blink182')}>Teste</button>
         </div>
         )
     }
