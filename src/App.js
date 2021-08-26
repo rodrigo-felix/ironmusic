@@ -5,11 +5,11 @@ import {
   Switch
 } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-
+import Footer from './components/Footer/Footer';
 
 import Home from './components/Home/Home';
 import Listartist from './components/Listartist/Listartist';
-import Footer from './components/Footer/Footer';
+import Albumartist from './components/Albunsartist/Albumartist';
 
 const App = () => {
   return (
@@ -19,16 +19,12 @@ const App = () => {
         <Switch>
           <Route path="/" exact><Home/></Route>
           <Route path="/List-artist" exact><Listartist/></Route>
+          <Route path="/Albuns-artist" exact><Albumartist/></Route>
         </Switch>        
       </main>
       <Footer/>
     </Router>
-
   );
-
-
 }
-
-
 
 export default App;
