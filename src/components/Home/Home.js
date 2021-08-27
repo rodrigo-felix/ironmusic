@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 
+
 class Home extends React.Component {
 
     state = {
@@ -16,6 +17,7 @@ class Home extends React.Component {
             busca: value
         })
     }  
+
 
     render = () => {
 
@@ -30,11 +32,13 @@ class Home extends React.Component {
                         <div className="card-body">
                             <h5 className="card-title">Busca</h5>
 
+
                             <input type="email" className="form-control" id="search-artist" placeholder="Busque pelo artista" onChange={this.handleInput} value={this.state.busca} /><br></br>
                             <Link to={`/list-artist/${this.state.busca}`} > 
                              <button type="submit" className="btn btn-primary">Buscar e ouvir </button>
                             </Link>
                            
+
 
                         </div>
                     </div>
