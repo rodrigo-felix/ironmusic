@@ -18,8 +18,8 @@ const App = () => {
       <main>
         <Switch>
           <Route path="/" exact><Home/></Route>
-          <Route path="/List-artist" exact><Listartist/></Route>
-          <Route path="/Albuns-artist" exact><Albumartist/></Route>
+          <Route path="/list-artist/:artist" component={Listartist}/>
+          <Route path="/albuns-artist" exact><Albumartist/></Route>
         </Switch>        
       </main>
       <Footer/>
