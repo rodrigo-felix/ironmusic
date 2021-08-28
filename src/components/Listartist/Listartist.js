@@ -16,15 +16,25 @@ class Listartist extends Component {
     componentDidMount() {
         let artist = this.props.match.params.artist;
         this.updateArtist(artist)
-
     }
+
     render() {
+
         return (
             <div className="container">
                 <h1 className="text-center" style={{ paddingTop: "30%" }}>
                     List of artist found
                 </h1>
-                <button onClick={() => this.updateArtist('blink182')}>Teste</button>
+            <div>
+                <ul>
+                    {this.state.artists.items ? this.state.artists.items.map(artist => (
+                        <li>
+                            <h2>Artista: {artist.name}</h2>
+                        </li>
+                    )) : 'Carregando...' }
+                </ul>
+            </div>
+
             </div>
         )
     }
