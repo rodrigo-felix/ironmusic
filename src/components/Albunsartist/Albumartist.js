@@ -5,11 +5,13 @@ class Albumartist extends Component{
     
     state= {
         albums: [],
+        loading: true,
     }
 
     async getAlbunsArtist(artistID) {
-        const albuns = await getAlbum(artistID)
-        this.setState({ albuns })
+        const albums = await getAlbum(artistID)
+        console.log(albums)
+        this.setState({ albums, loading: false })
     }
 
     componentDidMount() {
@@ -24,13 +26,13 @@ class Albumartist extends Component{
                 List albums from this artist
             </h1>
             <ul>
-                {this.state.items ? this.state.items.map(album => (
+                {!this.state.loading ? this.state.albums.map(album => (
                     <li>
-                        <h2>Album: {album.items.name}</h2>
+                        <h2>Album: {album.name}</h2>
+                        <a href={album.external_urls.spotify}>Ouvir no Spotify</a>
                     </li>
                     )) : 'Carregando...' }
                 </ul>
-            <button onClick={ () => this.getAlbunsArtist('6FBDaR13swtiWwGhX1WQsP')}>Teste</button>
         </div>
         )
     }

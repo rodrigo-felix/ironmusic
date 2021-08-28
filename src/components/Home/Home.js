@@ -3,8 +3,6 @@ import './Home.css';
 import {Link} from 'react-router-dom';
 
 
-
-
 class Home extends React.Component {
 
     state = {
@@ -43,7 +41,7 @@ class Home extends React.Component {
                         </div>
                     </div>
 
-                    <carousel className="week" >
+                    {/* <carousel className="week" >
                         <h1 style={{ textAlign: "center", }}>Week-Session</h1>
 
                         <div className="card-group">
@@ -67,13 +65,9 @@ class Home extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </carousel>
+                    </carousel> */}<br></br><br></br>
                 </div>
             </center>
-
-
-
-
         )
 
     }
