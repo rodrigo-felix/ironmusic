@@ -13,8 +13,8 @@ class Albumartist extends Component{
     }
 
     componentDidMount() {
-        let album = this.props.match.params.album;
-        this.updateArtist(album)
+        let album = this.props.match.params.artistID;
+        this.getAlbunsArtist(album)
     }
 
     render(){
@@ -24,11 +24,9 @@ class Albumartist extends Component{
                 List albums from this artist
             </h1>
             <ul>
-                {this.state.albums.items ? this.state.albums.items.map(album => (
+                {this.state.items ? this.state.items.map(album => (
                     <li>
-                        <h2>Album: {album.name}</h2>
-                        <link>
-                        </link>
+                        <h2>Album: {album.items.name}</h2>
                     </li>
                     )) : 'Carregando...' }
                 </ul>

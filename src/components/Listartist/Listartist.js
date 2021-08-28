@@ -30,14 +30,13 @@ class Listartist extends Component {
                     {this.state.artists.items ? this.state.artists.items.map(artist => (
                         <li key={artist.id}>
                             <h2>Artista: {artist.name}</h2>
-                            <Link to={`/albuns-artist/:${artist.id}`}>Ver o Album</Link>
+                            <Link to={`/albuns-artist/${artist.id}`}>Ver o Album</Link>
                         </li>
                     )) : <div class="spinner-border text-primary" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div> }
                 </ul>
             </div>
-            <button onClick={ () => this.getAlbunsArtist('6FBDaR13swtiWwGhX1WQsP')}>Teste</button>
             </div>
         )
     }
