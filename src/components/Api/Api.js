@@ -4,7 +4,7 @@ const api = axios.create({
     baseURL: 'https://api.spotify.com/v1',
     headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer BQDqwzwaRPzCRd4VLCv3JHyH0aOW2xiWtpUP-NaGHr2QSB436xGjI24lBJVgyR9xWrmQ4EO0xy2QsijyuJ4'
+        Authorization: 'Bearer BQBNiwdhPzij_SKCnLpLIq5LJinaSqoD8hT-LxuXp6tKM_zvHj1UV-CwrbL325M4auTZMXWmcGg3_xrG5oA'
     }
 })
 
