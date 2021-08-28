@@ -4,7 +4,7 @@ const api = axios.create({
     baseURL: 'https://api.spotify.com/v1',
     headers: {
         'Content-Type': 'application/json',
-        Authorization: 'Bearer BQC7D3i2l-juOTXDvzh29G7Apkmcr1raSxCAZgjNONDHlgQZpPl0adtqXbFBE2kYjqzCCIyyGF8gIHdHXR0'
+        Authorization: 'Bearer BQAhcSgxv7_n1zSdB0ywQh1ADUWG0vIzC1SSRHQMpYltFivlvc8At6GIxe5TN33nOJ3OLWcxYzMabrWgVhE'
     }
 })
 
@@ -22,9 +22,9 @@ const getAlbum = async(artistID) => {
     try {
         const response = await api.get(`/artists/${artistID}/albums`);
         console.log(response.data);
-        return response.data;
+        return response.data.items;
     } catch (error) {
-        console.log(error);
+        console.log(error.message);
     }
 }
 

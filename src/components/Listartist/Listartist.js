@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getArtist } from '../Api/Api';
+import {Link} from 'react-router-dom';
 
 class Listartist extends Component {
 
@@ -11,7 +12,6 @@ class Listartist extends Component {
         const artists = await getArtist(artist)
         this.setState({ artists })
     }
-
 
     componentDidMount() {
         let artist = this.props.match.params.artist;
@@ -28,13 +28,16 @@ class Listartist extends Component {
             <div>
                 <ul>
                     {this.state.artists.items ? this.state.artists.items.map(artist => (
-                        <li>
+                        <li key={artist.id}>
                             <h2>Artista: {artist.name}</h2>
+                            <Link to={`/albuns-artist/:${artist.id}`}>Ver o Album</Link>
                         </li>
-                    )) : 'Carregando...' }
+                    )) : <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div> }
                 </ul>
             </div>
-
+            <button onClick={ () => this.getAlbunsArtist('6FBDaR13swtiWwGhX1WQsP')}>Teste</button>
             </div>
         )
     }

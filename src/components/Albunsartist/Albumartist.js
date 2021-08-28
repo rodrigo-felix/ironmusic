@@ -7,9 +7,14 @@ class Albumartist extends Component{
         albums: [],
     }
 
-    async getAlbunsArtist(artistID){
+    async getAlbunsArtist(artistID) {
         const albuns = await getAlbum(artistID)
-        this.setState({albuns})
+        this.setState({ albuns })
+    }
+
+    componentDidMount() {
+        let album = this.props.match.params.album;
+        this.updateArtist(album)
     }
 
     render(){
@@ -18,6 +23,15 @@ class Albumartist extends Component{
             <h1 className="text-center" style={ {paddingTop: "30%" }}>
                 List albums from this artist
             </h1>
+            <ul>
+                {this.state.albums.items ? this.state.albums.items.map(album => (
+                    <li>
+                        <h2>Album: {album.name}</h2>
+                        <link>
+                        </link>
+                    </li>
+                    )) : 'Carregando...' }
+                </ul>
             <button onClick={ () => this.getAlbunsArtist('6FBDaR13swtiWwGhX1WQsP')}>Teste</button>
         </div>
         )
