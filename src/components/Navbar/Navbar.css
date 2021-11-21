@@ -3,6 +3,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     justify-content: center;
+    background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+    background-size: contain
+
+
 }
 
 .navbarcustom {
@@ -12,3 +16,4 @@ body {
 .navbar-brand {
     color: #fca311
 }
+
