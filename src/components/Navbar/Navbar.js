@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbarcustom justify-content-center">
             <NavLink className="navbar-brand" to="/" exact>
-                IronMusic
+                <h1>IronMusic</h1>
             </NavLink>
         </nav>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Home extends React.Component {
@@ -14,7 +14,7 @@ class Home extends React.Component {
         this.setState({
             busca: value
         })
-    }  
+    }
 
 
     render = () => {
@@ -23,25 +23,25 @@ class Home extends React.Component {
         return (
             <center>
                 <div className="container">
-                    <h1 className="text-center" style={{ paddingTop: "15%" }}>
+                    <h2 className="text-center"style={{ paddingTop: "3%" }}>
                         Home
-                    </h1>
+                    </h2>
                     <div className="card-search card text-center">
                         <div className="card-body">
                             <h5 className="card-title">Busca</h5>
 
 
                             <input type="email" className="form-control" id="search-artist" placeholder="Busque pelo artista" onChange={this.handleInput} value={this.state.busca} /><br></br>
-                            <Link to={`/list-artist/${this.state.busca}`} > 
-                             <button type="submit" className="btn btn-primary">Buscar e ouvir </button>
+                            <Link to={`/list-artist/${this.state.busca}`} >
+                                <button type="submit" className="btn btn-primary">Buscar e ouvir </button>
                             </Link>
-                           
+
 
 
                         </div>
                     </div>
 
-                    {/* <carousel className="week" >
+                    <carousel className="week">
                         <h1 style={{ textAlign: "center", }}>Week-Session</h1>
 
                         <div className="card-group">
@@ -65,7 +65,7 @@ class Home extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </carousel> */}<br></br><br></br>
+                    </carousel> <br></br><br></br>
                 </div>
             </center>
         )

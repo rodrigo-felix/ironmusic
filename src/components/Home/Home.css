@@ -1,5 +1,5 @@
 .card-search {
-    background-color: #14213d;
+    background-color: #eff1f5;
 }
 
 h5{
@@ -16,7 +16,7 @@ color: #fca311;
 border-radius: .6rem;
 display:flex;
 flex-direction: column;
-height: 600px;
+height: 250px;
 width: 700px;
 
 
@@ -27,3 +27,7 @@ width: 700px;
     height: 200px;
     object-fit: cover;
   }
+
+h2{
+    color: #eff1f5
+}
